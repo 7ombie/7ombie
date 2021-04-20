@@ -18,14 +18,12 @@ I'm a hobbyist programmer with an interest in bringing retro computing to the br
 + Use memory mapped IO with dynamic offsets to communicate with helper chips using interrupts.
 
 This is obviously just for fun, but there is nothing toyish about the technology. Chrome (with a few flags enabled)
-already offers a very powerful platform, and the WebAssembly Binary Toolkit includes everything else you need to get
+already offers a very powerful platform, and the WebAssembly Binary Toolkit includes everything else I need to get
 started. It's really just a novel paradigm for web development, based on old school microcomputing.
 
-Ideally, I would like a better assembler than the text format, with nicer syntax, better error messages, macros
-*et cetera*, and all implemented in static, vanilla JavaScript, so any frontend developer can easily make changes
-to the language. It would also be nice to curate a growing collection of helper chips, each with its own little
-datasheet (adapted to the needs of virtual ICs).
+Ideally, I would like a better assembler than the text format, with nicer syntax, better error messages, and macros
+*et cetera*. It would also be nice to curate a collection of helper chips, each with its own little 'datasheet'.
 
 I have made a start on the assembler, and have a few chips to throw in the collection, but it is early days on both
-projects. I am still learning WebAssembly, so this tech will be toyish, but it still beats using the text format,
+projects. I am still learning WebAssembly, so this tech *will* be toyish, but it still beats using the text format,
 and if anyone is crazy enough to join me, we can improve things together over time.
