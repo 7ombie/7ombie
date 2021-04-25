@@ -23,7 +23,3 @@ started. It's really just a novel paradigm for web development, based on old sch
 
 Ideally, I would like a better assembler than the text format, with nicer syntax, better error messages, and macros
 *et cetera*. It would also be nice to curate a collection of helper chips, each with its own little 'datasheet'.
-
-I have made a start on the assembler, and have a few chips to throw in the collection, but it is early days on both
-projects. I am still learning WebAssembly, so this tech *will* be toyish, but it still beats using the text format,
-and if anyone is crazy enough to join me, we can improve things together over time.
