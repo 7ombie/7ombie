@@ -68,8 +68,12 @@ cartridge filesystem in terms of the project filesystem. This nested hash is kno
 The directory mapping represents the root directory of the cartridge. Each key in the hash represents the name of
 a file or directory. Each nested directory is represented by a nested hash, using the same representation as that
 used by the root directory. Each file is expressed by a *command*, stored as a string. Commands can copy, compile
-and concatenate files from the project directory to produce the content that is written to corresponding file in
-the cartridge directory.
+and concatenate files from the project directory to produce the content that is written to the corresponding file
+in the cartridge directory.
+
+The cart can be loaded by the Ellex 80 runtime (a small JavaScript library), which will use the metadata to setup
+the SoC, copy the correct binaries to the various processors, resolve any imports and exports, and install all of
+the helper chips.
 
 PHANTASM
 --------
