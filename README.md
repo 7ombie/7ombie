@@ -63,8 +63,9 @@ depends on PHANTASM as its official assembler and programming language.
 The Ellex Chip Set
 ------------------
 
-It would be nice to create a curated collection of helper chips, each with its own little *datasheet* that explains
-how the chip works, how its registers are mapped internally (within the larger space required by chip) *et cetera*.
+Once the Ellex 80 platform is being used, it would make sense to curate a collection of helper chips, each with its
+own little *datasheet* that explains how the chip works, how its registers are mapped internally (within the larger
+space required by the chip) *et cetera*.
 
 A gamerfied version of the Mouser and Farnell websites, with a pixel-art aesthetic, would be ideal for sharing and
-documenting generic helper chips.
+documenting generic Ellex helper chips.
