@@ -1,5 +1,9 @@
+My name is Carl Smith, but I started using `7ombie` when I stopped programming professionally.
+
+I'm currently working on the Ellex 80, and hope to continue doing so indefinitely.
+
 ELLEX 80
-========
+--------
 
 The Ellex 80 is a planned retro computing platform for hobbyist programmers, based around the modern browser. The
 Ellex 80 is heavily inspired by 1980s home microcomputers, and borrows ideas from fantasy consoles like PICO 8.
