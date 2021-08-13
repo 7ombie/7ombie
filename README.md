@@ -87,7 +87,8 @@ error messages, and source-level debugging in DevTools, with a look and feel tha
 assembly languages (which were historically inspired by languages like 6502 Assembly).
 
 Note: While PHANTASM will always be developed as its own project, unrelated to the Ellex 80, the Ellex 80 platform
-depends on PHANTASM as its official assembler and programming language.
+depends on PHANTASM as its official assembler and programming language (though WAT is still supported, as there are
+those that enjoy using it).
 
 The Ellex Chip Set
 ------------------
