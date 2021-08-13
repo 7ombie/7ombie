@@ -1,6 +1,3 @@
-7ombie
-======
-
 My name is Carl Smith, but I started using `7ombie` when I stopped programming professionally.
 
 I'm currently working on the Ellex 80, and hope to continue doing so indefinitely.
