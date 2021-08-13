@@ -1,14 +1,30 @@
-I'm working on an retro platform for hobbyist programmers that is based around the browser. The working title is
-*Ellex 80*.
+ELLEX 80
+========
 
-The platform has some simple specifications for its physical hardware that people can follow to build a *clone*.
-For example, requiring a 1080p 60Hz display that the user is comfortable coding and gaming on. These specs are
-never more specific than they need to be.
+The Ellex 80 is a planned retro computing platform for hobbyist programmers, based around the modern browser. The
+Ellex 80 is heavily inspired by 1980s home microcomputers, and borrows ideas from fantasy consoles like PICO 8.
+
+Holistic Standardization
+------------------------
+
+The Ellex 80 has some simple specifications for its physical hardware that people can follow to build a *clone*.
+These specs are never more specific than they need to be. For example, the platform requires a 1080p 60Hz display
+that the user is comfortable coding and gaming on.
 
 The platform relies on its physical constraints to define software specifications that ensure that everything is
 standardized for all users. For example, defining a set of graphics modes that each have resolutions that support
 pixel-perfect scaling to 1080p. This allows users to target a graphics mode that is a good fit for their project,
-and know that it well render perfectly for all other users of the platform.
+and share their code, confident that it well render perfectly for all other users of the platform.
+
+The Ellex 80 design philosophy rejects the popular misconception that gimping the hardware inspires creativity. It
+is certainly true that artists are often more creative when forced to work under tight constraints, but they can
+simply opt into whatever constraints they find interesting, without the platform enforcing them.
+
+The Ellex 80 only employs constraints to minimize complications, ensuring that code written for one clone will
+execute perfectly on every other clone.
+
+Virtualization
+--------------
 
 Virtual hardware is created on top of clone systems by inverting the Web stack:
 
@@ -31,13 +47,20 @@ Virtual hardware is created on top of clone systems by inverting the Web stack:
 
 The need for a modern, virtual 6502 is perfectly met by the WebAssembly Engine. However, the Text Format (WAT) is
 a poor fit. It was not designed to be used as a source language, and support for using it that way is limited. It
-is also ugly.
+also has serious (albeit subjective) aesthetic issues, with many users strongly disliking the syntax.
 
 The PHANTASM assembler was created specificially to permit web assembly programming with a modern grammar, better
 error messages, and source-level debugging in DevTools, with a look and feel that is much closer to conventional
-assembly languages.
+assembly languages (which were historically inspired by languages like 6502 Assembly).
 
-Note: While PHANTASM will always be developed as its own project, unrelated to the Ellex 80, the platform depends
-on PHANTASM as its official assembler and programming language.
+Note: While PHANTASM will always be developed as its own project, unrelated to the Ellex 80, the Ellex 80 platform
+depends on PHANTASM as its official assembler and programming language.
 
-It would also be nice to have a curated collection of helper chips, each with its own little *datasheet*.
+The Ellex Chip Set
+------------------
+
+It would be nice to create a curated collection of helper chips, each with its own little *datasheet* that explains
+how the chip works, how its registers are mapped internally (within the larger space required by chip) *et cetera*.
+
+A gamerfied version of the Mouser and Farnell websites, with a pixel-art aesthetic, would be ideal for sharing and
+documenting generic helper chips.
