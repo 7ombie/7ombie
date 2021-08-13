@@ -49,6 +49,31 @@ Virtual hardware is created on top of clone systems by inverting the Web stack:
   system boards that can be programmed in assembly.
 + Use memory mapped IO with dynamic offsets to communicate with helper chips using interrupts.
 
+The paradigm summarized above will feel much more concrete to users of the platform, due to the way that packaging
+abstracts the components, providing fully specified (albeit bespoke and virtual) hardware for the user to program.
+
+Ellex Cartridges
+----------------
+
+Ellex projects are packaged into *cartridges*, which are fundamentally just directories, zipped to form a single
+distributable file, that is also compressed.
+
+Each Ellex project is developed within a directory that can contain anything the user likes, with whatever file
+structure they want, just so long as the root directory contains a file named `ellex.meta.json`, which is known
+as the *meta file*.
+
+The meta file contains a hash that sets out the usual metadata, and contains a nested hash that describes the
+cartridge filesystem in terms of the project filesystem. This nested hash is known as the *directory mapping*.
+
+The directory mapping represents the root directory of the cartridge. Each key in the hash represents the name of
+a file or directory. Each nested directory is represented by a nested hash, using the same representation as that
+used by the root directory. Each file is expressed by a *command*, stored as a string. Commands can copy, compile
+and concatenate files from the project directory to produce the content that is written to corresponding file in
+the cartridge directory.
+
+PHANTASM
+--------
+
 The need for a modern, virtual 6502 is perfectly met by the WebAssembly Engine. However, the Text Format (WAT) is
 a poor fit. It was not designed to be used as a source language, and support for using it that way is limited. It
 also has serious (albeit subjective) aesthetic issues, with many users strongly disliking the syntax.
