@@ -65,7 +65,7 @@ The Ellex Chip Set
 
 Once the Ellex 80 platform is being used, it would make sense to curate a collection of helper chips, each with its
 own little *datasheet* that explains how the chip works, how its registers are mapped internally (within the larger
-space required by the chip) *et cetera*.
+address space required by the chip) *et cetera*.
 
 A gamerfied version of the Mouser and Farnell websites, with a pixel-art aesthetic, would be ideal for sharing and
 documenting generic Ellex helper chips.
