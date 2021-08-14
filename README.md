@@ -71,9 +71,10 @@ used by the root directory. Each file is expressed by a *command*, stored as a s
 and concatenate files from the project directory to produce the content that is written to the corresponding file
 in the cartridge directory.
 
-The cart can be loaded by the Ellex 80 runtime (a small JavaScript library), which will use the metadata to setup
-the SoC, copy the correct binaries to the various processors, resolve any imports and exports, and install all of
-the helper chips.
+The cartridge can be loaded by the Ellex 80 runtime (a small JavaScript library), which will access the cartridge
+filesystem to initialize the SoC (creating the required threads, engines and memory), copy the specified binaries
+to the various processors (resolving any imports and exports in the process), install the helper chips, before it
+boots the board.
 
 PHANTASM
 --------
@@ -87,8 +88,11 @@ error messages, and source-level debugging in DevTools, with a look and feel tha
 assembly languages (which were historically inspired by languages like 6502 Assembly).
 
 Note: While PHANTASM will always be developed as its own project, unrelated to the Ellex 80, the Ellex 80 platform
-depends on PHANTASM as its official assembler and programming language (though WAT is still supported, as there are
-those that enjoy using it).
+depends on PHANTASM as its official assembler and programming language.
+
+PHANTASM will be my personal focus for the next year or two (at least), but Ellex 80 applications are ideal usecases
+for the PHANTASM project (Ellex 80 was literally the motivation for creating PHANTASM), so the Ellex 80 project will
+be developed concurrently, just very casually for the foreseeable.
 
 The Ellex Chip Set
 ------------------
@@ -99,3 +103,6 @@ address space required by the chip) *et cetera*.
 
 A gamerfied version of the Mouser and Farnell websites, with a pixel-art aesthetic, would be ideal for sharing and
 documenting generic Ellex helper chips.
+
+The chips will naturally accumulate over time, and the website would be simple enough to create, though documenting
+each chip would take time, so this is unlikely to happen any time soon.
