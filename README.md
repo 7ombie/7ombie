@@ -1,2 +1,1 @@
-My name is Carl Smith, but I started using `7ombie` when I stopped programming professionally. I came back to GitHub,
-as I'm working on a hobbyist programming platform.
+My name's Carl Smith, but I started using `7ombie` when I stopped programming professionally. I still do some Web stuff, and I'm learning Swift and the modern Apple (ARM) ecosystem, but it's really just a hobby these days.
