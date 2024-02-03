@@ -1,1 +1,1 @@
-My name's Carl Smith, but I started using `7ombie` when I stopped programming professionally. I still do some Web stuff, and I'm learning Swift and the modern Apple (ARM) ecosystem, but it's really just a hobby these days.
+My name's Carl Smith, but I started using `7ombie` when I stopped programming professionally. I used to do Web stuff, but switched to Swift, Metal and Apple Silicon, though it's really just a hobby these days.
