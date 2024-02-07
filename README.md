@@ -1,1 +1,1 @@
-My name's Carl Smith, but I started using `7ombie` when I stopped programming professionally. I used to do Web stuff, but switched to Swift, Metal and Apple Silicon, though it's really just a hobby these days.
+My name's Carl Smith, but I started using `7ombie` when I stopped programming professionally. I used to do Web stuff, but switched to Swift, Metal and Apple Silicon (learning to write a game engine), though it's really just a hobby these days.
